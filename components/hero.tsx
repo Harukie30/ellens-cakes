@@ -26,7 +26,7 @@ export function Hero() {
         </p>
         <p className="mt-5 max-w-md animate-fade-up animation-delay-150 text-base text-white/90 sm:text-lg">
           {site.tagline} Custom cakes for birthdays, weddings, and the moments
-          worth gathering for.
+          worth gathering .
         </p>
         <div className="mt-8 flex flex-wrap gap-3 animate-fade-up animation-delay-300">
           <a
