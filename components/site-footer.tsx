@@ -23,9 +23,9 @@ const socialIcons = {
 
 export function SiteFooter() {
   return (
-    <footer className="relative mt-8 overflow-hidden pt-4">
+    <footer className="relative mt-8 overflow-hidden bg-secondary/55 pt-4">
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_100%,oklch(0.94_0.03_18/0.55),transparent_70%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_100%,oklch(0.88_0.04_18/0.45),transparent_70%)]"
         aria-hidden
       />
       <div
@@ -33,8 +33,8 @@ export function SiteFooter() {
         aria-hidden
       />
 
-        <div className="relative mx-auto w-full max-w-6xl px-5 pt-14 pb-10 sm:px-8 sm:pt-16">
-          <div className="flex flex-col gap-8 rounded-3xl bg-white/35 px-6 py-8 sm:px-10 sm:py-10 lg:flex-row lg:items-center lg:justify-between">
+      <div className="relative mx-auto w-full max-w-6xl px-5 pt-14 pb-10 sm:px-8 sm:pt-16">
+        <div className="flex flex-col gap-8 rounded-3xl border border-border/50 bg-secondary/80 px-6 py-8 shadow-[0_20px_50px_-32px_oklch(0.28_0.035_35/0.25)] sm:px-10 sm:py-10 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-md">
             <p className="font-heading text-2xl tracking-tight text-foreground sm:text-3xl">
               Ready for something sweet?
@@ -165,7 +165,7 @@ export function SiteFooter() {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center gap-3 rounded-2xl bg-white/50 px-3.5 py-2.5 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/80"
+                      className="group flex items-center gap-3 rounded-2xl border border-border/40 bg-secondary/70 px-3.5 py-2.5 transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary/90"
                     >
                       <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-secondary text-primary/80 transition-colors duration-300 group-hover:bg-primary/10 group-hover:text-primary">
                         <HugeiconsIcon
