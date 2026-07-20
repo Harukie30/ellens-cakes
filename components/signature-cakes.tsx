@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { signatureCakes } from "@/lib/site";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 export function SignatureCakes() {
   return (
@@ -20,23 +21,29 @@ export function SignatureCakes() {
         </div>
 
         <ul className="mt-12 grid gap-10 sm:grid-cols-2 lg:gap-x-8 lg:gap-y-14">
-          {signatureCakes.map((cake) => (
+          {signatureCakes.map((cake, index) => (
             <li key={cake.name} className="group">
-              <div className="relative aspect-[4/5] overflow-hidden">
-                <Image
-                  src={cake.image}
-                  alt={cake.name}
-                  fill
-                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                  sizes="(max-width: 640px) 100vw, 50vw"
-                />
-              </div>
-              <h3 className="mt-5 font-heading text-2xl tracking-tight">
-                {cake.name}
-              </h3>
-              <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted-foreground sm:text-base">
-                {cake.description}
-              </p>
+              <ScrollReveal
+                direction="up"
+                delayMs={index * 120}
+                className="h-full"
+              >
+                <div className="relative aspect-[4/5] overflow-hidden">
+                  <Image
+                    src={cake.image}
+                    alt={cake.name}
+                    fill
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
+                </div>
+                <h3 className="mt-5 font-heading text-2xl tracking-tight">
+                  {cake.name}
+                </h3>
+                <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  {cake.description}
+                </p>
+              </ScrollReveal>
             </li>
           ))}
         </ul>

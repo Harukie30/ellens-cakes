@@ -33,8 +33,8 @@ export function SiteFooter() {
         aria-hidden
       />
 
-      <div className="relative mx-auto w-full max-w-6xl px-5 pt-14 pb-10 sm:px-8 sm:pt-16">
-        <div className="flex flex-col gap-8 rounded-3xl bg-white/45 px-6 py-8 sm:px-10 sm:py-10 lg:flex-row lg:items-center lg:justify-between">
+        <div className="relative mx-auto w-full max-w-6xl px-5 pt-14 pb-10 sm:px-8 sm:pt-16">
+          <div className="flex flex-col gap-8 rounded-3xl bg-white/35 px-6 py-8 sm:px-10 sm:py-10 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-md">
             <p className="font-heading text-2xl tracking-tight text-foreground sm:text-3xl">
               Ready for something sweet?
