@@ -9,7 +9,7 @@ export function About() {
         <ScrollReveal direction="left">
           <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
             <Image
-              src="https://images.unsplash.com/photo-1542826438-bd24ea24e2c3?auto=format&fit=crop&w=1600&q=80"
+              src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=1600&q=80"
               alt="Decorated cake on a kitchen counter"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

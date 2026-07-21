@@ -131,6 +131,26 @@
   }
 }
 
+@keyframes welcome-fade {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes welcome-bar {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
 @utility animate-fade-up {
   animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -141,6 +161,14 @@
 
 @utility animate-soft-scale {
   animation: soft-scale 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@utility animate-welcome-fade {
+  animation: welcome-fade 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@utility animate-welcome-bar {
+  animation: welcome-bar 1.8s cubic-bezier(0.22, 1, 0.36, 1) 0.45s both;
 }
 
 @utility animation-delay-150 {
@@ -177,4 +205,10 @@
   transform: translate3d(0, -110%, 0);
   opacity: 0;
   pointer-events: none;
+}
+
+/* Lock scroll while the welcome screen is visible */
+html.welcome-lock,
+html.welcome-lock body {
+  overflow: hidden;
 }

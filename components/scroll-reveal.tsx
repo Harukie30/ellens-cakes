@@ -4,7 +4,7 @@ import { ReactNode, useEffect, useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
 
-type RevealDirection = "up" | "left" | "right";
+type RevealDirection = "up" | "left" | "right" | "scale";
 
 type ScrollRevealProps = {
   children: ReactNode;
@@ -69,18 +69,23 @@ export function ScrollReveal({
     switch (direction) {
       case "left":
         return {
-          hidden: "opacity-0 -translate-x-5",
+          hidden: "opacity-0 -translate-x-6",
           shown: "opacity-100 translate-x-0",
         };
       case "right":
         return {
-          hidden: "opacity-0 translate-x-5",
+          hidden: "opacity-0 translate-x-6",
           shown: "opacity-100 translate-x-0",
+        };
+      case "scale":
+        return {
+          hidden: "opacity-0 scale-[1.06]",
+          shown: "opacity-100 scale-100",
         };
       case "up":
       default:
         return {
-          hidden: "opacity-0 translate-y-6",
+          hidden: "opacity-0 translate-y-8",
           shown: "opacity-100 translate-y-0",
         };
     }
